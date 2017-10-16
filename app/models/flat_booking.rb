@@ -1,0 +1,2 @@
+class FlatBooking < ApplicationRecord
+end

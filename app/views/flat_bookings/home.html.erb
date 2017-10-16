@@ -1,0 +1,14 @@
+<%= simple_form_for :flat_booking, url: get_report_flat_bookings_path, remote: true do |f| %>
+  <%= f.label :start_date %>
+  <%= f.input :start_date, as: :date, label: false, presence: true %>
+  <br>
+  <%= f.label :end_date %>
+  <%= f.input :end_date, as: :date, label: false, presence: true %>
+  <br>
+  <%= f.label :report_type %>
+  <br>
+  <%= f.select :report_type, ["monthly_sales", "yearly_sales"] %>
+  <br>
+  <br>
+  <%= f.submit 'get data' %>
+<% end %>
